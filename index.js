@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 function getNowPlaying() {
-    var child = child_process.spawnSync("mpc", ["status"])
+    var child = child_process.spawnSync("/root/.nix-profile/bin/mpc", ["status"])
     var stdout = child.stdout.toString();
 
     console.log("stdout ", stdout)
