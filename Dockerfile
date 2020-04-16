@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.11.5
 RUN apk update
 RUN apk add nodejs yarn mpc
 RUN mkdir /code
